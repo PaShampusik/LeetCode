@@ -28,7 +28,7 @@ func candy(ratings []int) int {
 	for i := range c {
 		c[i] = 1
 	}
-	for i := 1; i < n; i++ {
+	for i := range n {
 		if ratings[i-1] < ratings[i] {
 			c[i] = c[i-1] + 1
 		}
